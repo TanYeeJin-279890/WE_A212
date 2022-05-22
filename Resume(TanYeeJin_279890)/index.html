@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Resume</title>
+</head>
+<script>
+    function sideMenu() {
+        var x = document.getElementById("idsidebar");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.classname += " w3-show";
+        } else {
+            x.className = x.className.replace("w3-show", "");
+        }
+    }
+</script>
+
+<style>
+    .responsive {
+        width: 100%;
+        height: auto;
+    }
+
+    body {
+        background: linear-gradient(to right, #cc33ff 0%, #f9a4dc 100%);
+    }
+
+    img {
+        display: block;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 5px solid #555
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Helvetica Neue", sans-serif
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        vertical-align: center;
+    }
+
+    .desc {
+        column-count: 2;
+        column-gap: 20px;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    footer {
+        text-align: center;
+        padding: 3px;
+        background-color: purple;
+        color: white;
+    }
+</style>
+
+<body>
+    <div>
+        <div class="bar w3-bar w3-purple">
+            <a href="#profile" class="w3-bar-item w3-button w3-hide-small w3-right">Profile</a>
+            <a href="#education" class="w3-bar-item w3-button w3-hide-small w3-right">Education</a>
+            <a href="#skills" class="w3-bar-item w3-button w3-hide-small w3-right"> Skills</a>
+            <a href="#train" class="w3-bar-item w3-button w3-hide-small w3-right">Trainings and Activities</a>
+            <a href="#pp" class="w3-bar-item w3-button w3-hide-small w3-right">Projects</a>
+            <a href="javascript:void(0)" onclick="sideMenu()"
+                class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right">&#9776</a>
+        </div>
+
+        <div id="idsidebar" class="w3-bar-block w3-amber w3-hide w3-hide-large w3-hide-medium">
+            <a href="#" class="w3-bar-item w3-button w3-right">Profile</a>
+            <a href="#" class="w3-bar-item w3-button w3-right">Education</a>
+            <a href="#" class="w3-bar-item w3-button w3-right">Skills</a>
+            <a href="#" class="w3-bar-item w3-button w3-right">Trainings and Activities</a>
+            <a href="#" class="w3-bar-item w3-button w3-right">Projects</a>
+        </div>
+
+        <div class="w3-content w3-margin-top" style="max-width : 800px;">
+            <!-- The Grid -->
+            <div class="w3-row-padding">
+                <header class="w3-header w3-container w3-center"><img src="HeaderBanner2.png" class="responsive">
+                </header>
+
+                <!-- Left Column -->
+                <div class="w3-third">
+                    <div class="left w3-white w3-text-grey w3-card-4">
+                        <div class="w3-display-container ">
+                            <img src="resume2.jpeg" alt="Person" style="width : 100%">
+                            <div class="title" id="profile">
+                                <h3><b>Profile</b></h3>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Fresh Graduates who are full of
+                                    passion in the programming
+                                    field, ready to accept any
+                                    challenges, and love to learn new
+                                    things.</p>
+                                <p>Bringing forth a motivated attitude
+                                    and a variety of powerful skills.</p>
+                                <p>Committed to utilizing my skills to
+                                    further the mission of a company.</p>
+                            </div>
+                            <div class="title">
+                                <h4><b>Contact</b></h4>
+                            </div>
+                            <div style="overflow-x:auto">
+                                <div class="w3-container w3-margin-right w3-large w3-text-teal w3-text-blue">
+                                    <table>
+                                        <tr>
+                                            <td><i class="fa fa-user "></i></td>
+                                            <td>
+                                                <p style="font-size: 12px">Undergraduates</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-envelope "></i></td>
+                                            <td>
+                                                <p style="font-size: 12px"><a
+                                                        href="mailto:yeejintan@gmail.com">yeejintan@gmail.com</a></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-phone "></i></td>
+                                            <td>
+                                                <p style="font-size: 12px">+6010-2107377</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-home "></i></td>
+                                            <td>
+                                                <p style="font-size: 12px">NO.50, Jln LP1, Taman Limbongan
+                                                    Permai, 75200 Melaka.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4 class="title"><b><i class="fa fa-globe"></i>&nbsp;&nbsp;Languages</b></h4>
+                                <div class="content">
+                                    <p style="font-size:15px"><b>Malay</b></p>
+                                <div class="w3-light-grey w3-round-xlarge">
+                                    <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:75%">75%
+                                    </div>
+                                </div>
+
+                                <p style="font-size:15px"><b>English</b></p>
+                                <div class="w3-light-grey w3-round-xlarge">
+                                    <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:75%">75%
+                                    </div>
+                                </div>
+
+                                <p style="font-size:15px"><b>Chinese</b></p>
+                                <div class="w3-light-grey w3-round-xlarge">
+                                    <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:85%">85%
+                                    </div>
+
+                                </div>
+                                </div>
+                                <br><br>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End left content-->
+
+                <!--Right content-->
+                <div class="w3-twothird">
+                    <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
+                        <h3 class="title" id="education"><b><i class="fa fa-graduation-cap"></i>&nbsp;&nbsp;Education</b></h3>
+                        <div class="content">
+                            <h6><b>SMK Gajah Berang, Malacca</b></h6>
+                            <p><i class="fa fa-calendar"></i>&nbsp;&nbsp;2018 – 2019</p>
+                            <p><i class="fa fa-play-circle"></i>&nbsp;&nbsp;CGPA: 3.00</p>
+                            <p><b>Accomplishment:</b></p>
+                            <p><i class="fa fa-user"></i>&nbsp;&nbsp;Vice Secretary of MPP</p>
+                        </div>
+                        <div class="content">
+                            <h6><b>University Utara Malaysia, Kedah Darul Aman</b></h6>
+                            <p><i class="fa fa-calendar"></i>&nbsp;&nbsp;October 2020 – <span
+                                    class="w3-tag w3-teal w3-round">Current</span></p>
+                            <p><i class="fa fa-play-circle"></i>&nbsp;&nbsp;Current CGPA: 3.70</p>
+                            <p><i class="fa fa-play-circle"></i>&nbsp;&nbsp;Muet: Band 3</p>
+                            <p><i class="fa fa-play-circle"></i>&nbsp;&nbsp;Award: Dean’s Award 2020/2021</p>
+                        </div>
+                    </div>
+
+                    <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
+                        <h3 class="title" id="train"><b><i class="fa fa-code-fork"></i>&nbsp;&nbsp;Trainings and Activities</b>
+                        </h3>
+                        <div class="content">
+                            <p><b><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Involving in UUM Japanese Club as a
+                                    Secretary.</b></p>
+                            <p><b><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Participate in I-TECH UUM: Majoring Talk
+                                    2021 Registration Form
+                                    Programme.</b></p>
+                            <p><b><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Participate in SUSTAINABILITY: A FUTURE
+                                    FOR THE HOSPITALITY INDUSTRY
+                                    Programme.</b></p>
+                            <p><b><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Participate in Webinar Excellent in
+                                    Assignment, Ms Excel Workshop.</b></p>
+                            <p><b><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Participate in Webinar About GOOGLE,
+                                    GDSC UUM And TECHFACT.</b></p>
+                            <p><b><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Participate in Webinar Fundamentals Of
+                                    Web Development.</b></p>
+                        </div>
+                    </div>
+
+                    <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
+                        <h3 class="title" id="skills"><b><i class="fa fa-code"></i>&nbsp;&nbsp;Skills</b></h3>
+                        <div class="content">
+                            <p style="font-size:20px"><b>Java</b></p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:75%">75%
+                                </div>
+                            </div>
+
+                            <p style="font-size:20px"><b>JavaScript</b></p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:50%">50%
+                                </div>
+                            </div>
+
+                            <p style="font-size:20px"><b>HTML/CSS</b></p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:65%">65%
+                                </div>
+                            </div>
+                            <p style="font-size:20px"><b>Eclipse</b></p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:70%">70%
+                                </div>
+                            </div>
+                            <p style="font-size:20px"><b>MySQL</b></p>
+                            <div class="w3-light-grey w3-round-xlarge">
+                                <div class="w3-container w3-round-xlarge w3-blue w3-center" style="width:50%">50%
+                                </div>
+                            </div>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="w3-container w3-card-4 w3-white w3-margin-bottom">
+                        <h3 class="title" id="pp"><b><i class="fa fa-file-archive-o"></i>&nbsp;&nbsp;Previous Projects</b></h3>
+                        <div class="content">
+                            <h6><b>Mighty Grocery Store</b></h6>
+                            <p class="desc">It is a private group project done by 5 members via using Eclipse.This project is
+                                purposely coded to proof our coding skills that has learned during our Semester 2
+                                in Programming 2 course. 
+                                
+                                This project provide services for two main users which are customers and
+                                admin. Customer able to use this system to buy any groceries that available in this
+                                store and get to know the contact and location of the store whereas admin
+                                are able to use this system to check details of grocery product, add in new or update
+                                grocery products, check details of employees,
+                                add in or update information of every employees, and check promotion that has been done
+                                by the store</p>
+                        </div>
+                    </div>
+                </div>
+                <!--End right content-->
+
+                <footer>
+                    <p>Find me on </p>
+                    <a href="https://www.facebook.com/yeejin.tan.96/"><i
+                            class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                    <a href="https://www.instagram.com/yeejin_1215/?hl=en"><i
+                            class="fa fa-instagram w3-hover-opacity"></i></a>
+                    <a href="https://github.com/TanYeeJin-279890"><i class="fa fa-github-square"></i></a>
+                    <p style="font-size:12px; text-align:right;">Done by: Tan Yee Jin</p>
+                </footer>
+
+
+</body>
+
+</html>
